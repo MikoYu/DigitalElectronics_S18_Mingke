@@ -1,4 +1,4 @@
-# hello-world
+# Digital Electronics - S18 Mingke
 
 Hi there!
 
