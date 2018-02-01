@@ -4,6 +4,10 @@
 ### Find an Arduino project
 *Find (online) an project of any sort using Arduino that you find interesting. Write a brief description and put a link in the README.md file in your Github repository.*
 
+#### Project: Noisy Jelly
+https://pinaffo-pluvinage.com/papier-machine-1/
+
+The project is a "noisy chemistry lab" which let its gamers make jellies on their own and put them on a board so that they can make noise by touching the jellies. The game board is a capacitive sensor that can detect the variations of the jelly's shape, salt concentration, the distance and the strength of the finger contact; it translates these information to amusing audio signals. The fully working prototype was made with Arduino and Max/Msp.
 
 
 ### Learn about sensors
