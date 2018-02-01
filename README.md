@@ -8,7 +8,7 @@
 
 The project is a "noisy chemistry lab" which let its gamers make jellies on their own and put them on a board so that they can make noise by touching the jellies. The game board is a capacitive sensor that can detect the variations of the jelly's shape, salt concentration, the distance and the strength of the finger contact; it translates these information to amusing audio signals. The fully working prototype was made with Arduino and Max/Msp.
 
-Related project: https://pinaffo-pluvinage.com/jelly-safari/
+Related project: [Jelly Safari](https://pinaffo-pluvinage.com/jelly-safari/)
 
 ### Learn about sensors
 *Read about 3 of the sensors on [the Adafruit Sensors guide](http://www.ladyada.net/learn/sensors/). Describe (briefly) what you've learned in your Github READ.md file.*
