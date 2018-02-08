@@ -50,7 +50,10 @@ Statistics
 A colorful disc woven by visitors.
 
 ### Rough Schematic
-Tbd
+I don't know 😭
+
+For RGB Sensor:
+![](Project1/ISL29125 Breakout-v10.png)
 
 #### Components
 [Mini Photocell - SEN-09088 - SparkFun Electronics](https://www.sparkfun.com/products/9088)
