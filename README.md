@@ -39,3 +39,36 @@ Statistics
 - Output: 0V (low) on detection of 38KHz carrier, 5V (high) otherwise
 - Sensitivity range: 800nm to 1100nm with peak response at 940nm. Frequency range is 35KHz to 41KHz with peak detection at 38KHz
 - Power supply: 3 - 5V DC, 3mA
+
+## Week 3: Project 1 Proposal
+*Propose a device that does something "interesting". The assignment was previously to design a creative experimental musical instrument. I've decided to give you more freedom this semester so you can apply the project to your specific interests. We will discuss project ideas in class and you can always email me if you need help deciding what to do. At minimum your project should make use of TWO input sensors and TWO kinds of output.*
+
+### Sketch
+![](Project1/sketch.jpg)
+
+### Concept
+A colorful disc woven by visitors.
+
+### Rough Schematic
+I don't know 😭
+
+For RGB Sensor:
+![](Project1/ISL29125.png)
+
+#### Components
+[Mini Photocell - SEN-09088 - SparkFun Electronics](https://www.sparkfun.com/products/9088)
+
+[SparkFun RGB Light Sensor - ISL29125 - SEN-12829 - SparkFun Electronics](https://www.sparkfun.com/products/12829)
+…
+
+### What it will do
+Visitors may put any thread onto the disc, which turns the disc into music and light. 
+The disc will continuously rotate when the servo at its center is switched on. Beneath the disc, there is a a string of LDRs and a RGB sensor. The sensors will read the brightness and color over it. Finally, the program will map the data to music, which will be shown with several speakers.
+
+### References
+[Dyskograf on Vimeo](https://vimeo.com/51700038)
+![](Project1/references_dyskograf.jpg)
+
+
+
+
