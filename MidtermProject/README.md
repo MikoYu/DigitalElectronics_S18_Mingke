@@ -12,7 +12,7 @@ Sketch: ![sketch](images/design/sketch.jpg)
 
 Inspiration: [Dyskograf on Vimeo](https://vimeo.com/51700038)
 
-[See original proposal](../README.md)
+[See original proposal](../README.md#week-3-project-1-proposal)
 
 ### Iteration 1
 
@@ -20,9 +20,12 @@ Inspiration: [Dyskograf on Vimeo](https://vimeo.com/51700038)
 - I put these components together with a breadboard.
 - I roughly mapped the sensed data to simple tones.
 
+[overall code](code/colordisc/colordisc.ino).
 ![overall](images/photo-documentations/overall.jpg)
 
 ![schematic](images/design/schematic.jpg)
+
+[See video here](https://drive.google.com/file/d/15JRUd0HuEoIBkq-8XekzI6VjH77CxLrB/view?usp=sharing)
 
 ### Components
 
@@ -39,19 +42,19 @@ A [RGB sensor](https://learn.adafruit.com/adafruit-color-sensors) is used to rea
 I borrowed the [Flora Sewable Version](https://www.adafruit.com/product/1356) from the Hybrid Lab for testing. And will use a regular [Breakout Board Version](https://www.adafruit.com/product/1334) for future iterations.
 The driver and library is downloaded from [this link](https://github.com/adafruit/Adafruit_TCS34725).
 
-[Notes]
+Notes
 > pins
-> A4 (SDA), A5 (SCL)
+> - A4 (SDA), A5 (SCL)
 >
 > measurements
-> Color Temperature - measured in Kelvin
-> Lux - or Lumens per Square Meter
-> R, G and B (filtered) values
-> Clear (unfiltered) value
+> - Color Temperature - measured in Kelvin
+> - Lux - or Lumens per Square Meter
+> - R, G and B (filtered) values
+> - Clear (unfiltered) value
 
 test codes
-[to test a RGB LED](code/colorSensor-RGBtest/colorSensor-RGBtest.ino)
-[to test a RGB sensor with the LED](code/colorSensor-LEDcolorview/colorSensor-LEDcolorview.ino)
+- [to test a RGB LED](code/colorSensor-RGBtest/colorSensor-RGBtest.ino)
+- [to test a RGB sensor with the LED](code/colorSensor-LEDcolorview/colorSensor-LEDcolorview.ino)
 
 ![RGB sensor](images/photo-documentations/RGBsensor.jpg)
 ![RGB sensor and light](images/photo-documentations/RGBsensor-withLight.jpg)
