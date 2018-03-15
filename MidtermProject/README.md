@@ -23,7 +23,8 @@ Inspiration: [Dyskograf on Vimeo](https://vimeo.com/51700038)
 [overall code](code/colordisc/colordisc.ino).
 ![overall](images/photo-documentations/overall.jpg)
 
-![schematic](images/design/schematic.jpg)
+![sketch schematic](images/design/schematic.jpg)
+![fritzing schematic breadboard version](images/design/colordisc_schematic_Bb.png)
 
 [See video here](https://drive.google.com/file/d/15JRUd0HuEoIBkq-8XekzI6VjH77CxLrB/view?usp=sharing)
 
