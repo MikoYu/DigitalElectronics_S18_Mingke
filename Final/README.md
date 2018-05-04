@@ -49,11 +49,11 @@ Other major components
 
 the operational project (04/26)
 
-![operational_1](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/operational_1.jpg)
+![operational_1](images/operational_1.jpg)
 
-![operational_2](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/operational_2.jpg)
+![operational_2](images/operational_2.jpg)
 
-![using](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/using.png)
+![using](images/using.png)
 
 
 
@@ -61,13 +61,13 @@ the operational project (04/26)
 
 Motor & push button
 
-![component_motor](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/component_motor.jpg)
+![component_motor](images/component_motor.jpg)
 
 
 
 LDRs
 
-![component_ldr](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/component_ldr.jpg)
+![component_ldr](images/component_ldr.jpg)
 
 
 
@@ -75,19 +75,19 @@ LDRs
 
 Prototype (04/29)
 
-![prototype](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/prototype.jpg)
+![prototype](images/prototype.jpg)
 
 
 
 Sample (04/30)
 
-![model](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/model.jpg)
+![model](images/model.jpg)
 
 
 
 A finer case (05/03)
 
-![model_case](/Users/yumingke/Documents/GitHub/DigitalElectronics_S18_Mingke/Final/images/model_case.jpg)
+![model_case](images/model_case.jpg)
 
 
 
