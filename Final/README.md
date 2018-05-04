@@ -1,4 +1,4 @@
-# Project Writeup
+# Project Write-Up
 
 ## CD (for Color Disc)
 
@@ -12,7 +12,7 @@ More specifically, the visitors can put colorful paper scraps on a disc, make it
 
 ### Technical decisions
 
-To achieve the goal, I use transparent cast acrylic and paper scraps in bright colors as the "disc". I also put an array of four LDRs (light dependent resistors) underneath and RGB sensor above the disc to "read" it. As the visitor pushes a button, a DC motor starts to rotate, driving the plate to spin. Meanwhile, the LDRs and RBG sensor send brightness and RGB data of a certain radius of the disc to an Arduino UNO. The Arduino program then maps the realtime data (weighted brightness level and color of one point) to different music files, which will finally be played by a Adafruit Music Maker Board.
+To achieve the goal, I use transparent cast acrylic and paper scraps in bright colors as the "disc". I also put an array of four LDRs (light dependent resistors) underneath and RGB sensor above the disc to "read" it. As the visitor pushes a button, a DC motor starts to rotate, driving the plate to spin. Meanwhile, the LDRs and RBG sensor send brightness and RGB data of a certain radius of the disc to an Arduino UNO. The Arduino program then maps the real-time data (weighted brightness level and color of one point) to different music files, which will finally be played by an Adafruit Music Maker Board.
 
 
 
