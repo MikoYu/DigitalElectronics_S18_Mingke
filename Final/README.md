@@ -101,5 +101,5 @@ by 04/26, the operational project
 
 ### Program
 
-[See code here](code/colordisc)
+[See code here](program/colordisc)
 
