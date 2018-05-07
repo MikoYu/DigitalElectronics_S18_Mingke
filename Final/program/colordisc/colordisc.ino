@@ -1,18 +1,16 @@
 // define pins for in- and out-put
-int ldr1 = A0;
-int ldr2 = A1;
-int ldr3 = A2;
-int ldr4 = A3;
-int pushButton = 2;
-int motorControl = 9;
+const int ldrs[] = {A0, A1, A2, A3};
+const int pushButton = 2;
+const int motorControl = 9;
 
 // define LDR data and related variables
-int ldrValue1;
-int ldrValue2;
-int ldrValue3;
-int ldrValue4;
+int ldrValues[] = {0, 0, 0, 0};
 int brightness;
 int lightTrack;
+
+// for multi-tasking
+unsigned long previousMillis = 0;
+const long sensorInterval = 60;
 
 // setting up the RGB Sensor
 #include <Wire.h>
@@ -24,10 +22,6 @@ int colorTrack;
 
 // soundfiles mapped from light & color
 int soundTrack;
-
-// for multi-tasking
-unsigned long previousMillis = 0;
-const long sensorInterval = 60;
 
 // for the Music Maker Shield
 // include SPI, MP3 and SD libraries
@@ -53,6 +47,9 @@ void setup() {
   // define the pin modes:
   pinMode(pushButton, INPUT);
   pinMode(motorControl, OUTPUT);
+  for (int i = 0; i < 4; i++) {
+    pinMode(ldrs[i], INPUT);
+  }
 
   // initialise the RGB sensor
   if (tcs.begin()) {
@@ -78,7 +75,7 @@ void setup() {
   }
 
   // list files; commented out to shorten setup time
-  //  printDirectory(SD.open("/"), 0);
+  // printDirectory(SD.open("/"), 0);
 
   // Set volume for left, right channels. lower numbers == louder volume
   musicPlayer.setVolume(1, 1);
@@ -101,26 +98,26 @@ void loop() {
     //////////// brightness ////////////
 
     // read the ldr data
-    ldrValue1 = analogRead(ldr1);
-    ldrValue2 = analogRead(ldr2);
-    ldrValue3 = analogRead(ldr3);
-    ldrValue4 = analogRead(ldr4);
+    for (int i = 0; i < 4; i++) {
+      ldrValues[i] = analogRead(ldrs[i]);
+    }
 
     // calculate weighted brightness level, map it to a variable called lightTrack
-    brightness = int((ldrValue1 + ldrValue2 * 2 + ldrValue3 * 3) / 6); //try different weighting
-    if (brightness > 600 ) { // adjustment needed; need another two resistors
+    brightness = int((ldrValues[0] + ldrValues[1] + ldrValues[2] + ldrValues[3]) / 4); //try different weighting
+    if (brightness > 350 ) { 
       lightTrack = 2;
-    } else if (brightness > 300 && brightness <= 600) {
+    } else if (brightness > 200 && brightness <= 300) {
       lightTrack = 1;
     } else {
       lightTrack = 0;
     }
 
     // print out the ldr values
-    //    Serial.print("ldr1:\t"); Serial.print(ldrValue1);
-    //    Serial.print("\tldr2:\t"); Serial.print(ldrValue2);
-    //    Serial.print("\tldr3:\t"); Serial.print(ldrValue3);
-    //    Serial.print("\tldr4:\t"); Serial.print(ldrValue4);
+    //Serial.print("ldr1:\t"); Serial.print(ldrValues[0]);
+    //Serial.print("\tldr2:\t"); Serial.print(ldrValues[1]);
+    //Serial.print("\tldr3:\t"); Serial.print(ldrValues[2]);
+    //Serial.print("\tldr4:\t"); Serial.print(ldrValues[3]);
+    //Serial.print("\t");
     Serial.print("lightTrack:\t"); Serial.print(lightTrack);
     Serial.print("\t");
 
@@ -128,7 +125,7 @@ void loop() {
 
     // read the RGB sensor values
     tcs.getRawData(&red, &green, &blue, &clear);
-    tcs.setInterrupt(true);  // turn off LED
+    //tcs.setInterrupt(true);  // turn off LED
 
     // Figure out some basic hex code for visualization
     uint32_t sum = clear;
@@ -147,7 +144,7 @@ void loop() {
       colorTrack = 3; // red or orange
     } else if (r > 100 && g > 80 && b <= 75) {
       colorTrack = 4; // yellow
-    } else if (r <= 100 && g > 80 && b <= 75) {
+    } else if (r <= 80 && g > 80 && b > 75) {
       colorTrack = 5; // green
     } else if (r <= 100 && g > 80 && b > 75) {
       colorTrack = 6; // turquois/blue
@@ -158,10 +155,10 @@ void loop() {
     }
 
     // print out RGB sensor values
-    //    Serial.print("\tr:\t"); Serial.print((int)r);
-    //    Serial.print("\tg:\t"); Serial.print((int)g);
-    //    Serial.print("\tb:\t"); Serial.print((int)b);
-    //    Serial.print("\t");
+        Serial.print("\tr:\t"); Serial.print((int)r);
+        Serial.print("\tg:\t"); Serial.print((int)g);
+        Serial.print("\tb:\t"); Serial.print((int)b);
+        Serial.print("\t");
     //    Serial.print((int)r, HEX); Serial.print((int)g, HEX); Serial.print((int)b, HEX);
     Serial.print("\tcolorTrack:\t"); Serial.print(colorTrack);
     Serial.print("\t");
@@ -186,12 +183,6 @@ void loop() {
 
     // play music file based on realtime data sensed by the ldrs and rgbSensor
     switch (soundTrack) {
-      case 11:
-        musicPlayer.startPlayingFile("track011.mp3");
-        break;
-      case 12:
-        musicPlayer.startPlayingFile("track012.mp3");
-        break;
       case 21:
         musicPlayer.startPlayingFile("track021.mp3");
         break;
@@ -222,19 +213,8 @@ void loop() {
       case 62:
         musicPlayer.startPlayingFile("track062.mp3");
         break;
-      case 71:
-        musicPlayer.startPlayingFile("track071.mp3");
-        break;
-      case 72:
-        musicPlayer.startPlayingFile("track072.mp3");
-        break;
-      case 81:
-        musicPlayer.startPlayingFile("track081.mp3");
-        break;
-      case 82:
-        musicPlayer.startPlayingFile("track082.mp3");
-        break;
-        //      default:
+//      default:
+//        musicPlayer.startPlayingFile("track011.mp3");
     }
 
 

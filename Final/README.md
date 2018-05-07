@@ -85,21 +85,36 @@ Sample (04/30)
 
 
 
-A finer case (05/03)
+Final version for the Interface Show (05/05)
 
 ![model_case](images/model_case.jpg)
+
+[MORE IMAGES HERE!]
 
 
 
 ### Video
 
-by 04/26, the operational project
+by 04/26, the operational project [(See video here)](https://drive.google.com/open?id=1RIEyPjVpPg-VxG7BVmZRiryRxkMbb5bu)
 
-[See video here](https://drive.google.com/open?id=1RIEyPjVpPg-VxG7BVmZRiryRxkMbb5bu)
+on 05/04, nearly the final ver. (without the right button; wrong spinning direction)  [Video](https://drive.google.com/file/d/1woCvt96vzGdoye3V9ALgNRqGUC_0BaT7/view?usp=sharing)
 
-
+on 05/05, at the Interface Show [Video](https://drive.google.com/file/d/1UkFJ53uAxLe0IATmhcMFJ5hKjCTapOh1/view?usp=sharing)
 
 ### Program
 
 [See code here](program/colordisc)
+
+
+
+#### Further Considerations
+
+- The motor is even noiser than the disc. Turn up the volume; insulate the motor; or any other way...
+- No sound after turned on for a shor period. May be related to the button debounce function.
+- Shorter delay time between readings. Or instruct people put less scraps on the disc.
+- Wood finishing? 👋👋👋
+
+
+
+
 
