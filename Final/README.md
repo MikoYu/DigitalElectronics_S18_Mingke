@@ -85,17 +85,23 @@ Sample (04/30)
 
 
 
-A finer case (05/03)
+Final version for the Interface Show (05/05)
 
 ![model_case](images/model_case.jpg)
+
+![show_1](images/show_1.jpg)
+
+![show_2](images/show_2.jpg)
 
 
 
 ### Video
 
-by 04/26, the operational project
+By 04/26, the operational project [(See video here)](https://drive.google.com/open?id=1RIEyPjVpPg-VxG7BVmZRiryRxkMbb5bu)
 
-[See video here](https://drive.google.com/open?id=1RIEyPjVpPg-VxG7BVmZRiryRxkMbb5bu)
+On 05/04, nearly the final ver. (without the right button; wrong spinning direction)  [Video](https://drive.google.com/file/d/1woCvt96vzGdoye3V9ALgNRqGUC_0BaT7/view?usp=sharing)
+
+On 05/05, at the Interface Show [Video](https://drive.google.com/file/d/1UkFJ53uAxLe0IATmhcMFJ5hKjCTapOh1/view?usp=sharing)
 
 
 
