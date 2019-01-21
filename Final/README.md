@@ -4,7 +4,7 @@
 
 ### Project Goals
 
-To make a "music player" that turns colorful patterns made by visitors into music. 
+To make a "music player" that turns colorful patterns made by visitors into music.
 
 More specifically, the visitors can put colorful paper scraps on a disc, make it spin (and stop spinning,) and the system will translate the disc into music.
 
@@ -89,7 +89,10 @@ Final version for the Interface Show (05/05)
 
 ![model_case](images/model_case.jpg)
 
-[MORE IMAGES HERE!]
+![show_1](images/show_1.jpg)
+
+![show_2](images/show_2.jpg)
+
 
 
 
@@ -113,8 +116,3 @@ on 05/05, at the Interface Show [Video](https://drive.google.com/file/d/1UkFJ53u
 - No sound after turned on for a shor period. May be related to the button debounce function.
 - Shorter delay time between readings. Or instruct people put less scraps on the disc.
 - Wood finishing? 👋👋👋
-
-
-
-
-
