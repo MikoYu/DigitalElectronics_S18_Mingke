@@ -2,6 +2,10 @@
 
 ## CD (for Color Disc)
 
+project page: https://yumk.name/colordisc
+
+
+
 ### Project Goals
 
 To make a "music player" that turns colorful patterns made by visitors into music.
@@ -110,9 +114,10 @@ on 05/05, at the Interface Show [Video](https://drive.google.com/file/d/1UkFJ53u
 
 
 
-#### Further Considerations
+### Further Considerations
 
 - The motor is even noiser than the disc. Turn up the volume; insulate the motor; or any other way...
 - No sound after turned on for a shor period. May be related to the button debounce function.
 - Shorter delay time between readings. Or instruct people put less scraps on the disc.
-- Wood finishing? 👋👋👋
+- The design, the finishing...
+
